@@ -5,8 +5,10 @@ import Select from "components/ui/Select";
 import { Checkbox } from "components/ui/Checkbox";
 import Icon from "components/AppIcon";
 import contactService from "utils/contactService";
+import { useAnalytics } from "hooks/useAnalytics";
 
 const ContactForm = () => {
+  const { trackForm, trackButton } = useAnalytics();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -127,6 +129,7 @@ const ContactForm = () => {
       const result = await contactService.submitContactForm(formData);
 
       if (result.success) {
+        trackForm("contact_form");
         setSubmitSuccess(true);
         setFormData({
           name: "",

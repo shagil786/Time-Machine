@@ -62,20 +62,28 @@ Time Machine transforms how you interact with your digital memories. Using advan
    VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
    ```
 
-4. **Run database migrations:**
+4. **Set up Analytics (Optional):**
+   - Create a Google Analytics 4 property at [analytics.google.com](https://analytics.google.com)
+   - Get your Measurement ID (G-XXXXXXXXXX)
+   - Add to your `.env` file:
+   ```env
+   VITE_GA_TRACKING_ID=G-XXXXXXXXXX
+   ```
+
+5. **Run database migrations:**
    ```bash
    # Apply the migrations in supabase/migrations/
    # You can do this through the Supabase dashboard
    ```
 
-5. **Start the development server:**
+6. **Start the development server:**
    ```bash
    npm start
    # or
    yarn start
    ```
 
-6. **Open your browser:**
+7. **Open your browser:**
    Navigate to `http://localhost:5173`
 
 ## 📁 Project Structure
@@ -203,6 +211,7 @@ Create a `.env` file in the root directory:
 ```env
 VITE_SUPABASE_URL=your_supabase_project_url
 VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+VITE_GA_TRACKING_ID=G-XXXXXXXXXX
 ```
 
 ## 👥 Team
