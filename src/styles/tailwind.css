@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --color-background: #fafafa; /* gray-50 */
+    --color-foreground: #1a202c; /* gray-900 */
+    --color-border: #e2e8f0; /* gray-200 */
+    --color-input: #ffffff; /* white */
+    --color-ring: #1a365d; /* blue-900 */
+    
+    /* Card Colors */
+    --color-card: #ffffff; /* white */
+    --color-card-foreground: #1a202c; /* gray-900 */
+    --color-popover: #ffffff; /* white */
+    --color-popover-foreground: #1a202c; /* gray-900 */
+    
+    /* Muted Colors */
+    --color-muted: #f7fafc; /* gray-50 */
+    --color-muted-foreground: #4a5568; /* gray-600 */
+    
+    /* Brand Colors */
+    --color-primary: #1a365d; /* blue-900 */
+    --color-primary-foreground: #ffffff; /* white */
+    --color-secondary: #2d3748; /* gray-700 */
+    --color-secondary-foreground: #ffffff; /* white */
+    
+    /* Accent Colors */
+    --color-accent: #f6ad55; /* orange-300 */
+    --color-accent-foreground: #1a202c; /* gray-900 */
+    
+    /* State Colors */
+    --color-success: #68d391; /* green-300 */
+    --color-success-foreground: #1a202c; /* gray-900 */
+    --color-warning: #f6ad55; /* orange-300 */
+    --color-warning-foreground: #1a202c; /* gray-900 */
+    --color-error: #fc8181; /* red-300 */
+    --color-error-foreground: #1a202c; /* gray-900 */
+    --color-destructive: #fc8181; /* red-300 */
+    --color-destructive-foreground: #1a202c; /* gray-900 */
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
