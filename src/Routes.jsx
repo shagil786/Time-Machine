@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes as RouterRoutes, Route } from "react-router-dom";
 import ScrollToTop from "components/ScrollToTop";
 import ErrorBoundary from "components/ErrorBoundary";
+import AnalyticsProvider from "components/AnalyticsProvider";
 // Add your imports here
 import Homepage from "pages/homepage";
 import Pricing from "pages/pricing";
@@ -20,23 +21,25 @@ const Routes = () => {
   return (
     <BrowserRouter>
       <ErrorBoundary>
-        <ScrollToTop />
-        <RouterRoutes>
-          {/* Define your routes here */}
-          <Route path="/" element={<Homepage />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/how-it-works" element={<HowItWorks />} />
-          <Route path="/homepage" element={<Homepage />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact-support" element={<ContactSupport />} />
-          <Route path="/product-features" element={<ProductFeatures />} />
+        <AnalyticsProvider>
+          <ScrollToTop />
+          <RouterRoutes>
+            {/* Define your routes here */}
+            <Route path="/" element={<Homepage />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/how-it-works" element={<HowItWorks />} />
+            <Route path="/homepage" element={<Homepage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact-support" element={<ContactSupport />} />
+            <Route path="/product-features" element={<ProductFeatures />} />
 
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/timeline" element={<Timeline />} />
-          <Route path="/upload" element={<Upload />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="*" element={<NotFound />} />
-        </RouterRoutes>
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/timeline" element={<Timeline />} />
+            <Route path="/upload" element={<Upload />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="*" element={<NotFound />} />
+          </RouterRoutes>
+        </AnalyticsProvider>
       </ErrorBoundary>
     </BrowserRouter>
   );
