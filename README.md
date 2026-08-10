@@ -43,7 +43,7 @@ Time Machine transforms how you interact with your digital memories. Using advan
 1. **Clone the repository:**
    ```bash
    git clone <repository-url>
-   cd time_machine
+   cd Time-Machine
    ```
 
 2. **Install dependencies:**
@@ -89,7 +89,7 @@ Time Machine transforms how you interact with your digital memories. Using advan
 ## 📁 Project Structure
 
 ```
-time_machine/
+Time-Machine/
 ├── public/                    # Static assets and favicon
 ├── src/
 │   ├── components/           # Reusable UI components
