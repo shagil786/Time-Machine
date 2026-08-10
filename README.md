@@ -178,10 +178,9 @@ This project uses **Tailwind CSS** for styling with a comprehensive configuratio
 
 The app is built with mobile-first responsive design using Tailwind CSS breakpoints:
 - **Mobile**: 320px and up
-- **Tablet**: 768px and up  
+- **Tablet**: 768px and up
 - **Desktop**: 1024px and up
 - **Large Desktop**: 1280px and up
-
 
 ## 📦 Available Scripts
 
