@@ -34,7 +34,7 @@ Time Machine transforms how you interact with your digital memories. Using advan
 
 ## 📋 Prerequisites
 
-- Node.js (v16.x or higher)
+- Node.js (v18.x or higher)
 - npm or yarn
 - Supabase account (for backend services)
 
