@@ -188,12 +188,6 @@ The app is built with mobile-first responsive design using Tailwind CSS breakpoi
 - **`npm run build`** - Build for production
 - **`npm run serve`** - Preview production build
 
-To verify a production build locally:
-
-```bash
-npm run build
-```
-
 ## 🚀 Deployment
 
 Build the application for production:
