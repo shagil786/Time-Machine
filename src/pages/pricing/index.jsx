@@ -100,7 +100,6 @@ const Pricing = () => {
   ];
 
   const handleSelectPlan = (plan) => {
-    console.log('Selected plan:', plan.name);
     // Handle plan selection logic here
   };
 
